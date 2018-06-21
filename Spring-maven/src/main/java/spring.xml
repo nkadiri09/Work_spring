@@ -7,14 +7,17 @@
 	xmlns:context="http://www.springframework.org/schema/context">
 
 	<bean id="triangle" class="com.naren.kadiri.Triangle">
-		<property name="point1">
-			<bean class="com.naren.kadiri.Point">
-				<property name="x" value="20"></property>
-				<property name="y" value="0"></property>
-			</bean>
+		<property name="points">
+			<list>
+				<ref bean="pointA" />
+				<ref bean="pointB" />
+				<ref bean="pointC" />
+			</list>
 		</property>
-		<property name="point2" ref="pointB" />
-		<property name="point3" ref="pointC" />
+	</bean>
+	<bean id="pointA" class="com.naren.kadiri.Point">
+		<property name="x" value="20"></property>
+		<property name="y" value="0"></property>
 	</bean>
 	<bean id="pointB" class="com.naren.kadiri.Point">
 		<property name="x" value="0"></property>
