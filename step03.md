@@ -6,8 +6,9 @@
 
 ## Bean Scopes:
 
-        Singleton
-        Prototype
-        Request
-        Session
-        GlobalSession
+     Singleton
+     Prototype
+     (WebAware Scopes)
+     Request
+     Session
+     GlobalSession
