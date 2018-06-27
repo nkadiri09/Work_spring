@@ -37,7 +37,9 @@ for example:
       
 so this two mehtods will call befor the initialization of the bean and destroy of the bean.
       
-if we declare the default inti-mehtod and destroy-method in the  **_parent tag beans_** so it will be applicable to ath all beans with that name
+if we declare the default inti-mehtod and destroy-method in the  **_parent tag beans_** so it will be applicable to all beans with the myinit() and MyDestroy().
+
+**_But when we spring InitializingBean, DisposableBean interfaces we have to impliment afterPropertiesSet(), and destroy() so. this will call befor the manual configured init() and destroy().--**
       
       
       
