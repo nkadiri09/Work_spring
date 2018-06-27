@@ -7,6 +7,7 @@
   1. For bean implemented InitializingBean, it will run afterPropertiesSet() after all bean properties have been set.
   2. For bean implemented DisposableBean, it will run destroy() after Spring container is released the bean.
   
+  but it has to call context.registerShutdownHook();
   
 ## other than sprign declaration in java
 
