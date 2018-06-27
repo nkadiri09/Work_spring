@@ -16,18 +16,19 @@ for example:
 
     public class Triangle {
 
-      private Point point1;
-      private Point point2;
-      private Point point3;
-      // setter getters
-      
-      public void myInit(){
-      System.out.println("init method called");
+	      private Point point1;
+	      private Point point2;
+	      private Point point3;
+	      // setter getters
+
+	      public void myInit(){
+	      System.out.println("init method called");
+	      }
+
+	      public void myDestroy(){
+	      System.out.println("destryo method called");
+	      }
       }
-      
-      public void myDestroy(){
-      System.out.println("destryo method called");
-      }}
       
       and mentioned in spring.xml
       
