@@ -31,7 +31,7 @@ for example:
       
       and mentioned in spring.xml
       
-      <bean id="triangle" class="com.naren.kadiri.Triangle" init-method="myInin" destroy="mydestroy">
+      <bean id="triangle" class="com.naren.kadiri.Triangle" init-method="myInin" destroy-method="mydestroy">
 		    <property name="point1" ref="pointA" />
 	    </bean>
       
