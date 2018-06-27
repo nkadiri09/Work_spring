@@ -33,8 +33,11 @@ for example:
       
       <bean id="triangle" class="com.naren.kadiri.Triangle" init-method="myInin" destroy-method="mydestroy">
 		    <property name="point1" ref="pointA" />
-	    </bean>
+      </bean>
       
-      so this two mehtods will call befor the initialization of the bean and destroy of the bean.
+so this two mehtods will call befor the initialization of the bean and destroy of the bean.
+      
+if we declare the default inti-mehtod and destroy-method in the  **_parent tag beans_** so it will be applicable to ath all beans with that name
+      
       
       
